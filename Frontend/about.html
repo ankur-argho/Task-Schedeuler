@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskScheduler | About Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">C</div>
+        <span class="brand-text">TaskScheduler</span>
+      </div>
+
+      <nav class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="9" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="5" rx="1"></rect>
+              <rect x="14" y="12" width="7" height="9" rx="1"></rect>
+              <rect x="3" y="16" width="7" height="5" rx="1"></rect>
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="tasks.html">
+            <svg viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Tasks List
+            <span class="count-badge" id="sidebar-pending-count" style="margin-left: auto;">0</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="completed.html">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            Completed Archive
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="statistics.html">
+            <svg viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            Analytics Stats
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="about.html">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            About Project
+          </a>
+        </li>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="theme-toggle-btn" onclick="toggleTheme()">
+          <span class="theme-toggle-icon" id="theme-toggle-icon"></span>
+          <span id="theme-toggle-text">Light Mode</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="about-hero">
+        <h1>Task Scheduler</h1>
+        <p>Skill Development Project</p>
+        <p
+          style="font-size: 1rem; opacity: 0.85; margin-top: 1rem; max-width: 800px; font-weight: normal; line-height: 1.5;">
+          A modern Task Scheduler web application built with a responsive HTML, CSS and JavaScript frontend and a
+          powerful C++ backend implementing Data Structures and Algorithms.
+        </p>
+      </section>
+
+      <!-- Project Overview -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2>Project Overview</h2>
+        </div>
+        <div class="about-overview-card">
+          <p>
+            This project helps users organize daily tasks based on priority. The frontend provides a smooth and
+            responsive user experience, while all business logic, task management, searching, sorting, scheduling, and
+            file handling are implemented in C++ using Data Structures and Algorithms.
+          </p>
+        </div>
+      </section>
+
+      <!-- Technologies, Data Structures & Algorithms Row -->
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+
+        <!-- Technologies Used -->
+        <section class="content-section">
+          <div class="section-header">
+            <h2>Technologies Used</h2>
+          </div>
+          <div class="tech-card" style="height: 100%;">
+            <div style="margin-bottom: 1rem;">
+              <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 0.95rem;">Frontend</h4>
+              <ul class="tech-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 1rem;">
+              <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 0.95rem;">Backend</h4>
+              <ul class="tech-list">
+                <li>C++17</li>
+                <li>Crow Framework</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 0.95rem;">Storage</h4>
+              <ul class="tech-list">
+                <li>JSON File</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Data Structures Used -->
+        <section class="content-section">
+          <div class="section-header">
+            <h2>Data Structures Used</h2>
+          </div>
+          <div class="tech-card"
+            style="height: 100%; display: flex; flex-direction: column; gap: 1rem; justify-content: center;">
+            <div class="feature-badge-card"
+              style="margin-bottom: 0; background-color: var(--bg-primary); border-color: rgba(59, 130, 246, 0.25);">
+              Priority Queue
+            </div>
+            <div class="feature-badge-card"
+              style="margin-bottom: 0; background-color: var(--bg-primary); border-color: rgba(59, 130, 246, 0.25);">
+              Queue
+            </div>
+            <div class="feature-badge-card"
+              style="margin-bottom: 0; background-color: var(--bg-primary); border-color: rgba(59, 130, 246, 0.25);">
+              Vector
+            </div>
+          </div>
+        </section>
+
+        <!-- Algorithms Used -->
+        <section class="content-section">
+          <div class="section-header">
+            <h2>Algorithms Used</h2>
+          </div>
+          <div class="tech-card"
+            style="height: 100%; display: flex; flex-direction: column; gap: 1rem; justify-content: center;">
+            <div class="feature-badge-card"
+              style="margin-bottom: 0; background-color: var(--bg-primary); border-color: rgba(16, 185, 129, 0.25); color: var(--accent-success);">
+              Searching
+            </div>
+            <div class="feature-badge-card"
+              style="margin-bottom: 0; background-color: var(--bg-primary); border-color: rgba(16, 185, 129, 0.25); color: var(--accent-success);">
+              Sorting
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Project Features Section -->
+      <section class="content-section" style="margin-bottom: 2rem;">
+        <div class="section-header">
+          <h2>Project Features</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-badge-card">Add Tasks</div>
+          <div class="feature-badge-card">Edit Tasks</div>
+          <div class="feature-badge-card">Delete Tasks</div>
+          <div class="feature-badge-card">Search Tasks</div>
+          <div class="feature-badge-card">Sort Tasks</div>
+          <div class="feature-badge-card">Priority Scheduling</div>
+          <div class="feature-badge-card">Completed Archive</div>
+          <div class="feature-badge-card">Statistics Dashboard</div>
+          <div class="feature-badge-card">Dark & Light Mode</div>
+          <div class="feature-badge-card">Responsive Design</div>
+        </div>
+      </section>
+
+      <!-- Developers Section -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2>Developer Team</h2>
+        </div>
+        <div class="dev-grid">
+          <!-- Developer 1 -->
+          <div class="dev-card">
+            <span class="dev-avatar">👨‍💻</span>
+            <h3 class="dev-name">Argho Ghosh</h3>
+            <p class="dev-role">Full Stack Developer</p>
+            <ul class="dev-skills">
+              <li>Frontend Development</li>
+              <li>Backend (C++)</li>
+              <li>Project Architecture</li>
+              <li>DSA Implementation</li>
+            </ul>
+          </div>
+          <!-- Developer 2 -->
+          <div class="dev-card">
+            <span class="dev-avatar">👩‍💻</span>
+            <h3 class="dev-name">Aarohi</h3>
+            <p class="dev-role">Frontend Development</p>
+            <ul class="dev-skills">
+              <li>Frontend Development</li>
+              <li>UI/UX Design</li>
+              <li>Testing</li>
+              <li>Documentation</li>
+            </ul>
+          </div>
+          <!-- Developer 3 -->
+          <div class="dev-card">
+            <span class="dev-avatar">👨‍💻</span>
+            <h3 class="dev-name">Aarju Yadav</h3>
+            <p class="dev-role">Backend Support</p>
+            <ul class="dev-skills">
+              <li>Backend Support</li>
+              <li>Testing</li>
+              <li>Project Documentation</li>
+              <li>Presentation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="about-footer">
+        <h4>Task Scheduler</h4>
+        <p>Skill Development Project • Department of Computer Science & Engineering</p>
+        <p>Lovely Professional University</p>
+        <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
+          Developed by <strong>Argho Ghosh • Arohi • Aarju Yadav</strong>
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
